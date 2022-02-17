@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rexon</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_one">Welcome to the way for project management\n\nThe best in the domain of Project follow up\n\n
+        Done by Rexon.</string>
+</resources>

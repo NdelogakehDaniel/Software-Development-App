@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REXON APP"
+        android:textSize="32sp"
+        android:textColor="@color/login_gray"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn how to use rexon app"
+        android:textSize="18sp"
+        android:textColor="@color/login_gray"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginbg_one"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:hint="Username"
+        android:id="@+id/username"
+        android:paddingHorizontal="2dp"
+        android:textColorHint="@color/login_placeholder"
+        android:layout_marginVertical="10dp"
+        android:shadowColor="@color/login_gray"
+        android:background="@drawable/round_corner"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:paddingHorizontal="2dp"
+        android:textColorHint="@color/login_placeholder"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/round_corner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="75dp"
+        android:layout_marginVertical="2dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/login_placeholder"
+        android:text="Forgot your Password ?"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sendbtns"
+        android:layout_marginLeft="150dp"
+        android:clickable="true"
+        android:onClick="loginUser"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/login_placeholder"
+    android:layout_marginTop="15dp"
+    android:clickable="true"
+    android:onClick="moveToRegister"
+    android:text="Don't have an account? Sign up" />
+
+</LinearLayout>

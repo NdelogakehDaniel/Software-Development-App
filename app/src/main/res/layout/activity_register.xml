@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Rexon Account"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginRight="7dp"
+        android:layout_marginVertical="7dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up to get started in Rexon"
+        android:textColor="@color/login_gray"
+        android:textSize="18sp"
+        android:layout_marginVertical="3dp"
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar_user"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/avatar_corners"/>
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edittext_shadow"
+        android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/edittext_shadow"
+            android:hint="Username"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_shadow"
+        android:hint="Enter Email here ..."/>
+
+    <EditText
+        android:id="@+id/r_password"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_shadow"
+        android:hint="Password "/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_shadow"
+        android:hint="Enter city here ... "/>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_shadow"
+        android:hint="Enter Country here ... "/>
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:background="@drawable/edittext_shadow"
+        android:hint="Tel:  "/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="22sp"
+        android:text="Register now"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:onClick="moveToLogin"
+        android:background="@drawable/button_bg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/login_placeholder"
+        android:layout_marginVertical="30dp"
+        android:layout_marginRight="85dp"
+        android:clickable="true"
+        android:onClick="moveToLogin"
+        android:text="Already have an account? Login" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

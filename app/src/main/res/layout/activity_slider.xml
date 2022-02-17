@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Slider">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logins_two"
+        android:id="@+id/slider_image"
+        />
+    <TextView
+        android:id="@+id/emptyText"
+        android:paddingVertical="20dp"
+        android:layout_alignBottom="@id/slider_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignTop="@id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:paddingVertical="8dp"
+        android:textSize="18sp"
+        android:text="@string/title_one"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:id="@+id/slider_text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingVertical="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:clickable="true"
+            android:onClick="backSlide"
+            android:id="@+id/backText"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:clickable="true"
+            android:layout_marginLeft="240dp"
+            android:onClick="changeSlide"
+            android:id="@+id/nextText"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
